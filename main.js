@@ -1,4 +1,6 @@
 //Download Jquery now! https://jquery.com
+var MenuIsOnRightNow
+// Home, Catalogue, Login, Register, Cart, Wishlist, History
 
 $(document).ready(function() { //Run Immediately
     //alert("welcome");

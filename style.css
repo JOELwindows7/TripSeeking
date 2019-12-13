@@ -53,6 +53,20 @@ body {
     width: 100%;
 }
 
+.MobileRevealMenuButton{
+    display: none;
+}
+
+.PorButtonKey{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+.PorButtonKey ul{
+    display: flex;
+    flex-direction: row;
+}
+
 nav {
     text-decoration: none;
     list-style: none;
@@ -79,6 +93,10 @@ nav .SubNavigation {
     padding: 2px;
     text-decoration: none;
     list-style: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
     /* font-weight: bold; */
 }
 
@@ -114,6 +132,12 @@ nav .SubNavigation {
     display: none;
     position: fixed;
     text-decoration: none;
+}
+
+#nAccountButton{
+    background: bisque;
+    min-width: 10vh;
+    align-items: center;
 }
 
 ul {
@@ -160,6 +184,12 @@ embed{
     height: 100%;
 }
 
-/* @media{
-
-} */
+@media screen and (max-width: 500px){
+    .MobileRevealMenuButton{
+        display: inline;
+    }
+    nav{
+        display: none;
+    }
+    
+}
