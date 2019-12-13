@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TripSeek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="TopHead">
+        <!-- Header -->
+        <div class="Logoing">
+            <!-- Left Logoing -->
+            <img src="" alt="">
+            <p>Trip Seek</p>
+        </div>
+        <div class="ConSpace">
+            <!-- Spacer -->
+        </div>
+        <nav>
+            <ul class="Navigates">
+                <li class="Navitation" id="nHome"><a>Home</a>
+
+                </li>
+                <li class="Navitation" id="nTravels"><a>Travels</a>
+                    <ul class="SubNavigation" id="SubNaviTravels">
+                        <li class="SubNavitation">Holiday Pack 1</li>
+                        <li class="SubNavitation">Holiday Pack 2</li>
+                        <li class="SubNavitation">Holiday Pack 3</li>
+                        <li class="SubNavitation">Holiday Pack 4</li>
+                    </ul>
+                </li>
+                <li class="Navitation" id="nAbout"><a>About</a>
+
+                </li>
+                <li class="Navitation" id="nContact"><a>Contact</a>
+
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="Contenting">
+        <!-- Isi -->
+    </div>
+    <div class="bottoming">
+        <!-- Bawah -->
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
