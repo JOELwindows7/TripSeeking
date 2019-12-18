@@ -7,7 +7,77 @@
     <title>Welcome</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <p>Welcome</p>
+<body id="homepage">
+    <!-- <p>Welcome</p> -->
+    <br>
+    <br>
+    <!-- <div class="slider" id="containering">
+        <ul class="slides" id="containering-images">
+            <li class="slide"><img src="TempImage/image1.jpg" alt=""></li>
+            <li class="slide"><img src="TempImage/image2.jpg" alt=""></li>
+            <li class="slide"><img src="TempImage/image3.jpg" alt=""></li>
+            <li class="slide"><img src="TempImage/image4.jpg" alt=""></li>
+        </ul>
+    </div> -->
+    <div class="WindowSlide">
+        <div class="slider" id="containering">
+            <div class="slides" id="containering-images">
+                <!-- <img class="slide" src="TempImage/image1.jpg" alt="img1">
+                <img class="slide" src="TempImage/image2.jpg" alt="img2">
+                <img class="slide" src="TempImage/image3.jpg" alt="img3">
+                <img class="slide" src="TempImage/image4.jpg" alt="img4">
+                <img class="slide" src="TempImage/image1.jpg" alt="img1"> -->
+                <img src="images/image (1).jpg" alt="" class="slide">
+                <img src="images/image (2).jpg" alt="" class="slide">
+                <img src="images/image (3).jpg" alt="" class="slide">
+                <img src="images/image (4).jpg" alt="" class="slide">
+            </div>
+        </div>
+        <div class="TestimonyMini" id="TestimonyFieldMini">
+            <!-- <div class="TestimonyContainer">
+                <div class="TestimonyContains" id="Testimony1">
+                    <div class="TestimonyComment">
+                        <p>Wow Amazing</p>
+                    </div>
+                    <div class="TestimonyName">
+                        Namas
+                    </div>
+                </div>
+                <div class="TestimonyContains" id="Testimony2">
+                    <div class="TestimonyComment">
+                        <p>Duper Awesome!</p>
+                    </div>
+                    <div class="TestimonyName">
+                        Hams
+                    </div>
+                </div>
+            </div> -->
+            <div class="TestimonyComment" id="TestimonySaying">
+                <p>Wow Amazing</p>
+            </div>
+            <div class="TestimonyName" id="TestimonyUserName">
+                Namas
+            </div>
+        </div>
+    </div>
+    <div class="OrderWindow">
+        <div class="OrderTitle">
+            <p>Order Here!</p>
+        </div>
+        <div class="OrderDialog">
+
+        </div>
+    </div>
+    <div class="LoremIpsum">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, nihil, ipsam optio rerum, quia nulla perferendis fugit corrupti fuga cum eveniet magnam odio facere labore! Rerum ut quaerat est corporis.
+    </div>
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+    <script>
+        let TestimonyNumbers = TestimonyData.length;
+        $(document).ready(function(){
+            fillTestimony();
+        })
+    </script>
 </body>
 </html>
