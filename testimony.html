@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="bg-image img1">
+        <div class="text">
+            <h2>What our fantastic user says</h2>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="big-container">
+            <!-- use flexbox.help -->
+            <div class="usrcmmt">
+                <div class="top">
+                    <img width="20px" height="20px" src="images/avatar2.png" alt="">
+                </div>
+                <div class="middle">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quas libero ab unde tenetur
+                        amet? Libero, tenetur natus, facilis vel voluptatibus odio!</h4>
+                </div>
+                <div class="boxkosong">
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="usrcmmt">
+                <div class="top">
+                    <img width="20px" height="20px" src="images/img_avatar.png" alt="">
+                </div>
+                <div class="middle">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quas libero ab unde tenetur
+                        amet? Libero, tenetur natus, facilis vel voluptatibus odio!</h4>
+                </div>
+
+
+                <div class="boxkosong">
+                    <p></p>
+                </div>
+            </div>
+            
+            <div class="usrcmmt">
+                <div class="top">
+                    <img width="20px" height="20px" src="images/img_avatar2.png" alt="">
+                </div>
+                <div class="middle">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quas libero ab unde
+                        tenetur
+                        amet? Libero, tenetur natus, facilis vel voluptatibus odio!</h4>
+                </div>
+                <div class="boxkosong">
+                    <p></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+    <script>
+        let ArrayOfBigContainer = document.getElementsByClassName("big-container")
+        $("document").ready(function(){
+            for (let index = 0; index < ArrayOfBigContainer.length; index++) {
+                const element = ArrayOfBigContainer[index];
+                
+            }
+            for (let index = 0; index < TestimonyData.length; index++) {
+                const element = TestimonyData[index];
+                
+            }
+        })
+
+    </script>
+
+</body>
+</html>

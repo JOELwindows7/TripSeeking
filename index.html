@@ -17,7 +17,7 @@
 
             <!-- https://www.w3schools.com/tags/att_img_width.asp -->
             <img src="logo.png" height="20%" width="20%" alt="">
-            <p>Trip <br> Seek</p>
+            <p>Trip Seek</p>
         </div>
         <div class="ConSpace">
             <!-- Spacer -->
@@ -38,26 +38,39 @@
             </div>
             <nav class="NavMaster">
                 <ul class="Navigates">
-                    <li class="Navitation" id="nHome"><a>Home</a>
+                    <li class="Navitation AddableBlueButtonBackColoring" id="nHome"><a>Home</a>
     
                     </li>
                     <li class="Navitation" id="nTravels"><a>Catalogue</a>
                         <ul class="SubNavigation" id="SubNaviTravels">
-                            <li class="SubNavitation">Flight</li>
-                            <li class="SubNavitation">Hotel</li>
+                            <li onclick="SetPageIframe(MenuEnums.Flight)" class="SubNavitation" id="SubNFlight">Flight Tickets</li>
+                            <li onclick="SetPageIframe(MenuEnums.Hotel)" class="SubNavitation" id="SubNHotel">Hotel Booking</li>
                             <!-- <li class="SubNavitation">Holiday Pack 3</li>
                             <li class="SubNavitation">Holiday Pack 4</li> -->
-                            <li class="SubNavitation" onclick="SetPageIframe(MenuEnums.OrderPage)">Order Page</li>
+                            <!-- <li class="SubNavitation" onclick="SetPageIframe(MenuEnums.OrderPage)">Order Page</li> -->
                         </ul>
                     </li>
+                    <li class="Navitation" id="nTestimony"><a>Testimony</a> </li>
                     <!-- <li class="Navitation" id="nAbout"><a>About</a>
     
                     </li> -->
                     <li class="Navitation" id="nContact"><a>Contact</a>
     
                     </li>
+                    <li class="Navitation" id="nViewProfile">
+                        <div class="ProfilePicture">
+                            <img id="UseringPicture" height="20px" width="20px" src="images/avatar2.png" alt="">
+                        </div>
+                        <div class="AccountName">
+                            <p id="UseringName">UserBin</p>
+                        </div>
+                    </li>
                     <li class="Navitation" id="nAccountButton">
-                        <button>REGISTRATION</button>
+                        <!-- <button>REGISTRATION</button> -->
+                        REGISTRATION
+                    </li>
+                    <li class="Navitation" id="nSignInButton">
+                        LOGIN
                     </li>
                 </ul>
             </nav>
@@ -74,15 +87,15 @@
         <div id="AboutContact">
             <p id="AboutUsButton" ><a href="">About Us</a></p> 
             <div class="Divisable">
-                <div>
+                <div class="ContactInfo">
                     <p>081234567890</p>
                     <p>test12@gmail.com</p>
                 </div>
                 <div id="SocialMediaButton">
-                    <ul>
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
-                        <li><img src="" alt=""></li>
+                    <ul class="WhyDidntSocialWork">
+                        <li><img height="25px" width="25px" src="images/social (1).png" alt=""></li>
+                        <li><img height="25px" width="25px" src="images/social (2).png" alt=""></li>
+                        <li><img height="25px" width="25px" src="images/social (3).png" alt=""></li>
                     </ul>
                 </div>
             </div> 

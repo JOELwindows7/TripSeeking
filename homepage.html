@@ -27,10 +27,10 @@
                 <img class="slide" src="TempImage/image3.jpg" alt="img3">
                 <img class="slide" src="TempImage/image4.jpg" alt="img4">
                 <img class="slide" src="TempImage/image1.jpg" alt="img1"> -->
-                <img src="images/image (1).jpg" alt="" class="slide">
-                <img src="images/image (2).jpg" alt="" class="slide">
-                <img src="images/image (3).jpg" alt="" class="slide">
-                <img src="images/image (4).jpg" alt="" class="slide">
+                <img class="slide" src="images/image (1).jpg" alt="">
+                <img class="slide" src="images/image (2).jpg" alt="">
+                <img class="slide" src="images/image (3).jpg" alt="">
+                <img class="slide" src="images/image (4).jpg" alt="">
             </div>
         </div>
         <div class="TestimonyMini" id="TestimonyFieldMini">
@@ -62,21 +62,30 @@
     </div>
     <div class="OrderWindow">
         <div class="OrderTitle">
-            <p>Order Here!</p>
+            <p>Define Travel</p>
         </div>
         <div class="OrderDialog">
-
+            <!-- <button class="SelectOrderTypeButton" id="DefTravelFlight">Flight</button> -->
+            <!-- <button class="SelectOrderTypeButton" id="DefTravelHotel">Hotel</button> -->
         </div>
     </div>
-    <div class="LoremIpsum">
+    <!-- <div class="LoremIpsum">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, nihil, ipsam optio rerum, quia nulla perferendis fugit corrupti fuga cum eveniet magnam odio facere labore! Rerum ut quaerat est corporis.
-    </div>
+    </div> -->
     <script src="jquery.js"></script>
+    <script src="jquery.textfill.min.js"></script>
     <script src="main.js"></script>
     <script>
-        let TestimonyNumbers = TestimonyData.length;
+        
+        
         $(document).ready(function(){
             fillTestimony();
+            $('.TestimonyComment').textfill({maxFontPixel: 36})
+
+            setInterval(function(){
+                CycleUpTetimonyIndex();
+                setTestimonyIndex(TestimonyIndex)
+            }, 6000)
         })
     </script>
 </body>

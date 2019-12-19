@@ -15,12 +15,23 @@ body {
     flex-direction: column;
     min-height: 100%;
     height: 100%;
+    background-image: url('images/bg.jpg');
 }
 
 /* https://stackoverflow.com/questions/2460100/remove-the-complete-styling-of-an-html-button-submit */
-input, button{
+button{
     border: none;
-    background-color: deepskyblue;
+    /* background-color: rgb(47, 255, 40); */
+}
+input{
+    border: pink;
+    /* background-color: springgreen; */
+}
+.SubmitButton{
+    /* border: 2px solid rgb(16, 255, 115); */
+    background-color: rgb(0, 153, 255);
+    padding: 10px;
+    font-size: large;
 }
 
 .TopHead {
@@ -28,11 +39,11 @@ input, button{
     flex-direction: row;
     width: auto;
     height: auto;
-    background-color: rgb(0, 227, 235);
+    background-color: #f1f1f1;
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .Contenting{
@@ -51,7 +62,8 @@ input, button{
 }
 .TestimonyComment p{
     /* https://stackoverflow.com/questions/16056591/font-scaling-based-on-width-of-container */
-    font: 4vmax bold;
+    font: 3vmax bold;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
 }
 /* .TestimonyContainer{
     display: flex;
@@ -61,16 +73,25 @@ input, button{
 
 .bottoming{
     /* min-height: 100%; */
-    background-color: turquoise;
+    background-color: rgba(100, 100, 100, 0.651);
 }
 
 .bottoming #AboutUsButton{
-    background-color: cyan;
+    background-color: rgba(255, 255, 255, 0.479);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+#AboutUsButton a{
+    text-decoration: none;
+    color: black;
 }
 
 .Divisable{
     display: flex;
     flex-direction: row;
+}
+.ContactInfo{
+    width: 100%;
 }
 
 .SocialMediaButton{
@@ -79,6 +100,19 @@ input, button{
     align-items: center;
     align-content: center;
     justify-content: center;
+}
+.SocialMediaButton ul{
+    display: flex;
+    flex-direction: row;
+}
+.WhyDidntSocialWork{
+    display: flex;
+    flex-direction: row;
+}
+.WhyDidntSocialWork li{
+    padding: 10px 10px;
+    border: 10px 10px;
+    cursor: pointer;
 }
 
 
@@ -97,6 +131,8 @@ input, button{
 
 .Logoing p{
     padding: 10px;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .ConSpace {
@@ -132,6 +168,12 @@ nav li {
 
 nav .SubNavigation {
     background-color: darkcyan;
+    padding: 5px 5px;
+}
+
+.SubNavitation{
+    padding: 5px 5px;
+    border: 1px solid rgba(97, 161, 0, 0.521);
 }
 
 .Navigates {
@@ -149,13 +191,14 @@ nav .SubNavigation {
     justify-content: center;
     text-align: center;
     align-content: center;
+    border-radius: 5px;
     /* font-weight: bold; */
     /* color: blue; */
 }
 
 .Navitation:hover {
-    color: cyan;
-    background-color: rgb(31, 40, 48);
+    /* color: cyan; */
+    background-color: rgb(185, 185, 185);
     transition: 1s;
     cursor: pointer;
 }
@@ -171,13 +214,18 @@ nav .SubNavigation {
 
 .Navitation a {
     text-decoration: none;
-    color: rgb(0, 38, 255);
+    color: rgb(0, 0, 0);
+    font-size: large;
+    padding: 10px 10px;
 }
 
 .Navitation a:hover {
-    color: cyan;
+    /* color: dodgerblue; */
     transition: 1s;
 }
+/* .Navitation aactive{
+    color: dodgerblue;
+} */
 
 .SubNavigation {
     box-sizing: border-box;
@@ -186,10 +234,24 @@ nav .SubNavigation {
     text-decoration: none;
 }
 
+.AddableBlueButtonBackColoring{
+    background-color: rgb(0, 84, 209);
+}
+
+/* #nHome{
+    background-color: rgb(0, 84, 209); 
+    border-radius: 5px;
+} */
+
 #nAccountButton{
-    background: bisque;
+    /* background: bisque; */
     min-width: 10vh;
     align-items: center;
+}
+#nViewProfile{
+    /* display: flex; */
+    display: none;
+    flex-direction: row;
 }
 
 ul {
@@ -206,6 +268,7 @@ ul {
     width: 100%;
     height: 100%;
     background: rgb(0, 156, 143);
+    background-image: url("images/bg.jpg");
 }
 
 .Boxables{
@@ -214,12 +277,21 @@ ul {
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    background: cornsilk;
+    background: rgba(99, 89, 50, 0.712);
     align-content: center;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    /* text-align: center; */
     padding: 20px;
+    color: white;
+}
+.Boxables-2{
+    color: rgb(255, 255, 255);
+    background-color: rgba(151, 103, 0, 0.493);
+}
+.Forming{
+    align-items: baseline;
+    align-content: flex-start;
 }
 
 embed{
@@ -249,7 +321,7 @@ iframe{
     /* justify-content: center; */
     align-content: center;
     align-items: center;
-    background: cornflowerblue;
+    background: rgba(100, 148, 237, 0.555);
 }
 
 .slider{
@@ -287,7 +359,7 @@ iframe{
 .OrderWindow{
     display: flex;
     flex-direction: column;
-    background-color: darkseagreen;
+    background-color: rgba(0, 255, 191, 0.247);
     width: 100%;
     align-items: center;
     align-content: center;
@@ -295,10 +367,16 @@ iframe{
 }
 .OrderWindow p{
     font: bold;
-    font-size: xx-large;
+    font-size: large;
 }
 .OrderTitle{
     padding: 20px 50px;
+}
+
+.SelectOrderTypeButton{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.103);
 }
 
 .ConvertibleNavMenu{
@@ -308,6 +386,10 @@ iframe{
 .LoremIpsum{
     font-size: 200px;
     word-wrap: break-word;
+}
+
+#homepage{
+    background-image: url("images/bg.jpg");
 }
 
 @media only screen and (max-width: 500px){
@@ -339,5 +421,9 @@ iframe{
         flex-direction: column;
         
     }
+    
+}
+
+meta{
     
 }
